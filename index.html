@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container-fluid">
+            <h1 class="display-4">Crystals Collector!</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+
+    <div class="row"> 
+
+        <div class="col-md-8">
+            <div class="container text-center">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random nubmer.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="count-container">
+                <h1 id="count"></h1>
+            </div>
+    
+            <div class="score container text-left">
+                <li>Wins: <span id="wins"></span></li>
+                <br>
+                <li>Losses: <span id="losses"></span></li>
+            </div>
+        </div>
+
+    </div>   
+
+    <div class="container text-center">
+        <img src="assets/images/gem1.jpg" alt="gem1" style="width:200px;height:200px">
+        <img src="assets/images/gem2.jpeg" alt="gem2" style="width:200px;height:200px">
+        <img src="assets/images/gem3.jpg" alt="gem3" style="width:200px;height:200px">
+        <img src="assets/images/gem5.jpg" alt="gem4" style="width:200px;height:200px">
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6 text-right">
+            <h4>Score To Match</h4>
+            <p><span id="scoretomatch">40</span></p>
+        </div>
+        
+        <div class="col-md-6">
+            <h4>Current Count</h4>
+            <p><span id="currentscore">40</span></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
