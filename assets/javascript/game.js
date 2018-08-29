@@ -9,7 +9,7 @@ var gem4 = Math.floor((Math.random() * 12) + 1);
 var wins = 0;
 var losses = 0;
 var count = 0;
-var stm = Math.floor((Math.random() * 120) + 17);
+var stm = Math.floor((Math.random() * 120) + 19);
 
 //*Scoretomatch random number generator
 $("#scoretomatch").text(stm); 
@@ -41,7 +41,7 @@ function compare(){
 if ( stm === count ){
     wins++;
     $("#wins").text(wins);
-    stm = Math.floor((Math.random() * 120) + 17);
+    stm = Math.floor((Math.random() * 120) + 19);
     $("#scoretomatch").text(stm);
     count = 0;
     $("#currentscore").text(count); 
@@ -53,7 +53,7 @@ if ( stm === count ){
 else if ( count > stm ){ 
     losses++;
     $("#losses").text(losses);
-    stm = Math.floor((Math.random() * 120) + 17);
+    stm = Math.floor((Math.random() * 120) + 19);
     $("#scoretomatch").text(stm);
     count = 0;
     $("#currentscore").text(count);
